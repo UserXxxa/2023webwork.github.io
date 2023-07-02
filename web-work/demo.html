@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报告</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+   <style>
+    .a {
+        margin-top: 20pax;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: cadetblue;
+    }
+    body {
+            background-color:silver;
+        } 
+   </style>
+</head>
+<body>
+    <div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">《Web应用基础》课程结业报告</h3>
+            </div>
+        </div>
+        <div class="panel-body form-inline">
+            <div class="a">
+                本次项目是个关于Web前端三剑客即html，css，javaScript的一个简介
+            </div>
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th>问题</th>
+                    <th>解决办法</th>
+                    <th>是否解决</th>
+                </tr>
+                <tr>
+                    <th>页面整体居中问题</th>
+                    <th>一开始使用 margin: 0 auto; 的办法，发现不可以，最后使用绝对定位解决</th>
+                    <th>已解决</th>
+                </tr>
+                <tr>
+                    <th>绝对定位使用后兄弟关系的两个div标签将压在一起</th>
+                    <th>去掉一个div标签，改为a标签，并改为父子关系</th>
+                    <th>原问题未解决</th>
+                </tr>
+                <tr>
+                    <th>插入的图片图片显示不全</th>
+                    <th>将图片maigin-top:100px；</th>
+                    <th>原问题未解决</th>
+                </tr>
+                <tr>
+                    <th>浮动产生一些标签错位，混乱</th>
+                    <th>父级添加overflow方法,可以通过触发BFC的方式，实现清楚浮动效果。
+                        必须定义宽度，但是不能定义height，使用overflow:hidden时，
+                        会触发BFC，浏览器会自动检查浮动区域的高度。</th>
+                    <th>已解决</th>
+                </tr>
+                <tr>
+                    <th>用div包含一个img标签时，img标签里面的图片下会有一条白色的缝隙</th>
+                    <th>因为img标签默认是底部对齐，此时只需要给img标签加一个
+                        display：block的属性将其转换为块状元素即可。</th>
+                    <th>已解决</th>
+                </tr>
+            </table>
+            <div class="d">
+                <h3>总结</h3>
+                <div style="border: 1px solid #ccc;">
+                    通过本次页面的实现，巩固了html css的知识点，也遇到很多困难通过不断地查资料，
+                    解决了一些问题，也有的问题没有解决。也知道只使用css，html，js写页面比较困难，使用框架等可以简化代码，之后也会继续学web开发。
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
